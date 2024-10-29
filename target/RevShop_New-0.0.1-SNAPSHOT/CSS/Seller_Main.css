@@ -1,0 +1,139 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.navbar {
+    margin-bottom: 20px;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: space-around; /* Spread items evenly with equal space */
+    align-items: center; /* Vertically center the items */
+    flex-direction: column; /* Align items in a column */
+    width: 100%; /* Ensure the navbar takes full width */
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    text-align: center; /* Center text within the link */
+    width: 100%; /* Make each nav link fill the column width */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffc107;
+}
+
+/* Dropdown styles */
+.nav-item .dropdown-menu {
+    background-color: #343a40;
+    border: none;
+    min-width: 180px;
+    text-align: left; /* Align dropdown text to the left */
+}
+
+.dropdown-menu .dropdown-item {
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: #ffc107;
+    color: black;
+}
+
+/* Profile Icon Styles */
+.profile-icon {
+    width: 30px; /* Set icon width */
+    height: 30px; /* Set icon height */
+    border-radius: 50%; /* Make the icon circular */
+}
+
+/* Flexbox spacing for dropdown items */
+.navbar-nav .nav-item {
+    position: relative;
+    width: 100%; /* Make sure each nav-item takes full width */
+    display: flex;
+    justify-content: center; /* Center nav-items */
+    align-items: center; /* Center items vertically */
+    margin-bottom: 10px; /* Add space between each nav-item */
+}
+
+.nav-item:hover .dropdown-menu {
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); /* Center dropdown below the item */
+    top: 100%;
+    z-index: 1;
+}
+
+/* Transition effects for dropdown */
+.navbar-nav .dropdown-menu {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.nav-item:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+}
+
+/* Ensures dropdown stays within screen */
+.navbar-nav .dropdown-menu {
+    transform: translateX(-50%);
+}
+/*special*/
+.details-section {
+    margin-top: 20px;
+}
+
+.details-section .card {
+    margin-bottom: 20px;
+}
+
+.details-section .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.details-section .card-text {
+    font-size: 1.125rem;
+    font-weight: normal;
+}
+
+#salesChart {
+    width: 100%;
+    height: 400px;
+}
+
+#salesChart {
+    width: 100%;
+    height: 400px;
+}
+/**/
+.profile-dropdown {
+            display: none;
+        }
+
+        .profile-icon:hover + .profile-dropdown,
+        .profile-dropdown:hover {
+            display: block;
+            position: absolute;
+            top: 55px;
+            right: 15px;
+            background-color: white;
+            border-radius: 5px;
+            padding: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+        }
+
+        .profile-info {
+            margin-bottom: 10px;
+        }
+
+        .profile-dropdown a {
+            text-decoration: none;
+            color: black;
+        }

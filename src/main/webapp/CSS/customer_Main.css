@@ -1,0 +1,37 @@
+@charset "UTF-8";
+body {
+    background-color: #f8f9fa;
+}
+
+header {
+    background-color: #343a40;
+}
+
+.category-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.category-card img {
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.category-card h5 {
+    color: #333;
+    font-size: 1.1rem;
+}
+
+.category-card:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transform: scale(1.03);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
